@@ -1,0 +1,74 @@
+html{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+    color: #3a3a3a;
+    min-height: 100vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+ul {
+   list-style: none;
+   padding: 0;
+}
+img {
+    size: auto;
+    max-width: 100%;
+}
+#marketing, #search, #travel, #map, #gallery, #calculator {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    align-self: center;
+    margin: auto;
+    color:rgb(181, 128, 230)
+}
+span {
+    display: inline-flex;
+    justify-content: space-between;  
+}
+#student-name, #to-top {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+#profile-img {
+    max-width: 50vw;
+}
+li {
+    padding: 10px 105px;
+}
+#skills li {
+    padding: 0;
+}
+strong, a{
+    color:#3a3a3a;
+}
+section {
+    margin: 20px auto;
+}
+ li div {
+    background-color: rgb(181, 128, 230);
+}
+footer {
+    background-color: rgb(181, 128, 230);
+    padding: 0;
+    margin-left: auto;
+}
+.main-wrap {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+header, footer {
+    font-family: 'Dosis', sans-serif;
+    font-size: large;
+}
