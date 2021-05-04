@@ -11,24 +11,23 @@
     <title>Student Portfolio</title>
 </head>
 <body>
-   <div class="main-wrap">
     <header>
         <h1>Student Name</h1>
         <nav>
         <ul class="main-nav">
-            <li><div><a href="#top"><strong>Home</strong></div></a></li>
-            <li><div><a href="#portfolio"><strong>Portfolio</strong></div></a></li>
-            <li><div><a href="#skills"><strong>Skills</strong></div></a></li>
-            <li><div><a href="#contact-info"><strong>Contact</strong></div></a></li>
+            <li><div class="nav-items"><a href="#top"><strong>Home</strong></div></a></li>
+            <li><div class="nav-items"><a href="#portfolio"><strong>Portfolio</strong></div></a></li>
+            <li><div class="nav-items"><a href="#skills"><strong>Skills</strong></div></a></li>
+            <li><div class="nav-items"><a href="#contact-info"><strong>Contact</strong></div></a></li>
         </ul>
         </nav>
     </header>
-    <banner>
+    <banner class="banner">
         <img src="images/responsive-layout-profile.png" alt="Profile photo of student" id="profile-img">
         <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
     </banner>
+    <h2 id="portfolio">Portfolio</h2>
     <main>
-        <h2 id="portfolio">Portfolio</h2>
         <section id="marketing">
             <img src="images/portfolio-1.png" alt="Picture of front page of marketing project">
             <h3>Marketing Page</h3>
@@ -74,15 +73,14 @@
         <p>Phone <strong>+1(111)555-1234</strong></p>
         <p>Email <strong>email@yoursite.com</strong></p>
     </div>
-    </div>
-    <div class="footer-wrap">
-        <hr>
     <footer>
-        <span>
             <h4 id="student-name">Student Name</h4>
             <h4 id="to-top"><a href="#top">Back To Top</a></h4>
-        </span>
+            <ul id="bottom-nav">
+                <li class="footer-nav"><a href="#top">Home</a></li>
+                <li class="footer-nav"><a href="#portfolio">Portfolio</a></li>
+                <li class="footer-nav"><a href="#contact-info">Contact</a></li>
+            </ul>
     </footer>
-</div>
 </body>
 </html>

@@ -6,10 +6,12 @@ body {
     line-height: 1.2;
     color: #3a3a3a;
     min-height: 100vh;
-    margin-left: 0;
-    margin-right: 0;
     margin-bottom: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 ul {
@@ -29,9 +31,12 @@ h1 {
     margin: auto;
     color:rgb(181, 128, 230)
 }
-span {
+footer {
     display: inline-flex;
-    justify-content: space-between;  
+    justify-content: space-between; 
+    margin: 1rem 0 0;
+    background-color: rgb(181, 128, 230);
+    padding: 0;
 }
 #student-name, #to-top {
     padding-left: 15px;
@@ -45,7 +50,7 @@ a {
     max-width: 50vw;
 }
 li {
-    padding: 10px 105px;
+    padding: 5px 105px;
 }
 #skills li {
     padding: 0;
@@ -56,19 +61,88 @@ strong, a{
 section {
     margin: 20px auto;
 }
- li div {
+li div {
     background-color: rgb(181, 128, 230);
-}
-footer {
-    background-color: rgb(181, 128, 230);
-    padding: 0;
-    margin-left: auto;
-}
-.main-wrap {
-    margin-left: 10px;
-    margin-right: 10px;
 }
 header, footer {
     font-family: 'Dosis', sans-serif;
     font-size: large;
+}
+.contact {
+    border-bottom: solid #3a3a3a 1px;
+}
+/*Media Queries*/
+@media (max-width: 767px){
+    #bottom-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 767px){
+    #to-top{
+        display: none;
+    }
+    footer, #bottom-nav {
+        display: flex;
+    }
+    footer {
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer-nav {
+        padding: 0 1em;
+    }
+    header, .main-nav {
+        display: flex;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-nav li {
+        padding: 0 .5em;
+    }
+   h1 {
+       margin: 0;
+   }
+   li div {
+       background-color: white;
+   }
+  .banner {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 1rem;
+  }
+  header, main {
+      padding: 0 1rem;
+  }
+  main {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  section {
+      flex: 1 45%;
+      padding: .5em;
+  }
+  .contact {
+      padding: 0 6rem;
+  }
+}
+
+@media (min-width: 1024px){
+    main, .banner {
+        padding: 1rem 2rem 0 2rem;
+    }
+    header {
+        flex-direction: row;
+        padding: 1.5rem 2rem;
+    }
+    section {
+        flex: 1 30%;
+    }
+    #skills {
+        margin: 0;
+    }
 }
