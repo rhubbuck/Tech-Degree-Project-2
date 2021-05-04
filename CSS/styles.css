@@ -1,4 +1,4 @@
-html{
+html {
     box-sizing: border-box;
 }
 body {
@@ -19,7 +19,6 @@ ul {
    padding: 0;
 }
 img {
-    size: auto;
     max-width: 100%;
 }
 #marketing, #search, #travel, #map, #gallery, #calculator {
