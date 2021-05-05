@@ -70,12 +70,10 @@ header, footer {
 .contact {
     border-bottom: solid #3a3a3a 1px;
 }
-/*Media Queries*/
-@media (max-width: 768px){
-    #bottom-nav {
-        display: none;
-    }
+#bottom-nav {
+    display: none;
 }
+/*Media Queries*/
 
 @media (min-width: 768px){
     #to-top{
